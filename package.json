@@ -12,6 +12,7 @@
     "eslint": ">= 3",
     "eslint-config-canonical": ">=37",
     "eslint-config-prettier": ">=8",
+    "eslint-define-config": ">=1",
     "eslint-import-resolver-alias": ">=1",
     "eslint-import-resolver-typescript": ">=3",
     "eslint-plugin-import": ">=2",
@@ -24,11 +25,16 @@
     "eslint-plugin-unicorn": ">=45",
     "eslint-plugin-unused-imports": ">=2",
     "eslint-plugin-vue": ">=9",
-    "prettier": ">=2",
-    "eslint-define-config": ">=1"
+    "prettier": ">=2"
   },
   "devDependencies": {
     "eslint-define-config": "^1.12.0",
+    "semantic-release": "^19.0.5",
     "typescript": "^4.9.3"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
