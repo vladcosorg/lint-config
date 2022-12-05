@@ -1,8 +1,11 @@
-module.exports = {
-  "extends": "plugin:unicorn/recommended",
-  "plugins": [
-    "unicorn"
-  ],
+// @ts-check
+const { defineConfig } = require('eslint-define-config')
+module.exports = defineConfig({
+  extends: 'plugin:unicorn/recommended',
+  plugins: ['unicorn'],
+  rules: {
+    'unicorn/prefer-at': 'warn',
+  },
   overrides: [
     {
       files: '.eslintrc.js',
@@ -10,6 +13,5 @@ module.exports = {
         'unicorn/prefer-module': 'off',
       },
     },
-  ]
-
-}
+  ],
+})

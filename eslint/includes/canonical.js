@@ -1,19 +1,14 @@
 module.exports = {
-  extends: [
-
-    // 'canonical',
-    // 'canonical/prettier'
-  ],
-  rules: {
-    'canonical/filename-match-exported': 'off',
-  },
+  extends: ['plugin:canonical/recommended', 'canonical/prettier'],
+  // extends: ['canonical', 'canonical/prettier'],
+  // rules: {
+  //   'canonical/filename-match-exported': 'off',
+  // },
+  plugins: ['canonical'],
   overrides: [
     {
-      "extends": [
-        "canonical/typescript"
-      ],
-      "files": "*.ts",
-
+      extends: ['canonical/typescript'],
+      files: '*.ts',
     },
-  ]
+  ],
 }

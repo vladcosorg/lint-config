@@ -1,5 +1,4 @@
 // @ts-check
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { defineConfig } = require('eslint-define-config')
 module.exports = defineConfig({
   ignorePatterns: ['.eslintrc.js'],
@@ -12,10 +11,10 @@ module.exports = defineConfig({
     './includes/eslint.js',
     './includes/typescript-eslint.js',
     './includes/vue.js',
-    // './includes/sonar.js',
+    './includes/sonar.js',
     './includes/import.js',
     './includes/unused-imports.js',
-    // './includes/unicorn.js',
+    './includes/unicorn.js',
     // './includes/canonical.js',
     './includes/json.js',
     'prettier',

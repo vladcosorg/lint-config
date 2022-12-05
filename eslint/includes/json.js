@@ -1,12 +1,13 @@
 module.exports = {
-  extends: [
-    "plugin:jsonc/recommended-with-jsonc",
-    'plugin:json-schema-validator/recommended'
-  ],
   overrides: [
     {
-      files: ["*.json", "*.json5", "*.jsonc"],
-      parser: "jsonc-eslint-parser",
+      files: ['*.json', '*.json5', '*.jsonc'],
+      extends: [
+        'plugin:jsonc/recommended-with-json',
+        'plugin:json-schema-validator/recommended',
+        'plugin:jsonc/prettier',
+      ],
+      parser: 'jsonc-eslint-parser',
     },
   ],
-};
+}
