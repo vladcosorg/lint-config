@@ -19,11 +19,11 @@ module.exports = {
             webpackChunknameFormat: '[a-zA-Z0-57-9-/_]+',
           },
         ],
-        'import/extensions': [
-          'warn',
-          'always',
-          { js: 'never', ts: 'never', vue: 'always' },
-        ],
+        // 'import/extensions': [
+        //   'warn',
+        //   'always',
+        //   { js: 'never', ts: 'never', vue: 'always' },
+        // ],
         'import/newline-after-import': 'warn',
         'import/order': [
           'warn',
