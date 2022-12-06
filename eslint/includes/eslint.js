@@ -1,5 +1,6 @@
 // @ts-check
 const { defineConfig } = require('eslint-define-config')
+
 module.exports = defineConfig({
   extends: ['eslint:recommended'],
   rules: {
@@ -20,7 +21,7 @@ module.exports = defineConfig({
     'class-methods-use-this': 'warn',
     eqeqeq: 'warn',
     'grouped-accessor-pairs': 'warn',
-    'func-style': 'warn',
+    'func-style': ['warn', 'declaration'],
     'consistent-return': 'warn',
     'default-case': 'warn',
     'default-case-last': 'warn',
