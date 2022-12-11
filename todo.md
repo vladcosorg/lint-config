@@ -1,0 +1,4 @@
+- Add zod 
+- Add test lib
+- Search for eslint tsconfig
+- https://www.npmjs.com/package/eslint-import-resolver-typescript
