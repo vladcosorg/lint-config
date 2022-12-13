@@ -13,7 +13,7 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=5",
     "@typescript-eslint/parser": ">=5",
-    "eslint": ">= 3",
+    "eslint": ">=8",
     "eslint-config-canonical": ">=37",
     "eslint-config-prettier": ">=8",
     "eslint-define-config": ">=1",
@@ -32,19 +32,12 @@
     "prettier": ">=2"
   },
   "devDependencies": {
-    "copy-and-watch": "^0.1.6",
-    "eslint-define-config": "^1.12.0",
     "semantic-release": "^19.0.5",
-    "typescript": "^4.9.3",
-    "zod": "^3.19.1"
+    "typescript": "^4.9.3"
   },
   "release": {
     "branches": [
       "main"
     ]
-  },
-  "dependencies": {
-    "@types/signal-exit": "^3.0.1",
-    "signal-exit": "^3.0.7"
   }
 }
