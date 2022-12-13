@@ -11,7 +11,6 @@ module.exports = {
           {
             missingExports: true,
             unusedExports: true,
-            // ignoreExports: ['211'],
           },
         ],
         'import/dynamic-import-chunkname': [
@@ -52,7 +51,7 @@ module.exports = {
       },
     },
     {
-      files: '*.vue',
+      files: ['*.vue', '*.test.ts'],
       rules: {
         'import/no-unused-modules': [
           'error',

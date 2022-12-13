@@ -59,4 +59,12 @@ module.exports = defineConfig({
     'quote-props': ['warn', 'as-needed'],
     'require-await': 'warn',
   },
+  overrides: [
+    {
+      files: ['*.test.ts'],
+      rules: {
+        'no-unused-expressions': 'off',
+      },
+    },
+  ],
 })

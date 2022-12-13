@@ -1,12 +1,18 @@
 // @ts-check
 const { defineConfig } = require('eslint-define-config')
+
 module.exports = defineConfig({
   overrides: [
     {
       files: ['*.ts', '*.js'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: ['./tsconfig.json', './packages/*/tsconfig.json'],
+        project: [
+          './tsconfig.json',
+          './tsconfig.test.json',
+          './tsconfig.eslint.json',
+          './packages/*/tsconfig.json',
+        ],
       },
       extends: [
         'plugin:@typescript-eslint/recommended',
@@ -15,6 +21,7 @@ module.exports = defineConfig({
       ],
       plugins: ['@typescript-eslint'],
       rules: {
+        'node/no-missing-import': 'off',
         camelcase: 'off',
         '@typescript-eslint/naming-convention': [
           'warn',
@@ -57,6 +64,12 @@ module.exports = defineConfig({
       files: ['*.ts'],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'error',
+      },
+    },
+    {
+      files: ['*.test.ts'],
+      rules: {
+        '@typescript-eslint/require-await': 'off',
       },
     },
   ],
