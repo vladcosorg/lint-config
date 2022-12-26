@@ -7,12 +7,7 @@ module.exports = defineConfig({
       files: ['*.ts', '*.js'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: [
-          './tsconfig.json',
-          './tsconfig.test.json',
-          './tsconfig.eslint.json',
-          './packages/*/tsconfig.json',
-        ],
+        project: './tsconfig.json',
       },
       extends: [
         'plugin:@typescript-eslint/recommended',
@@ -47,6 +42,7 @@ module.exports = defineConfig({
           },
         ],
         '@typescript-eslint/member-ordering': 'warn',
+        '@typescript-eslint/consistent-type-imports': 'warn',
         '@typescript-eslint/method-signature-style': 'warn',
         '@typescript-eslint/no-confusing-void-expression': 'warn',
         '@typescript-eslint/no-redundant-type-constituents': 'warn',

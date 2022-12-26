@@ -13,6 +13,7 @@ module.exports = {
             unusedExports: true,
           },
         ],
+        'import/no-default-export': 'error',
         'import/dynamic-import-chunkname': [
           'warn',
           {
@@ -53,6 +54,7 @@ module.exports = {
     {
       files: ['*.vue', '*.test.ts'],
       rules: {
+        'import/no-default-export': 'off',
         'import/no-unused-modules': [
           'error',
           {
@@ -62,9 +64,16 @@ module.exports = {
         ],
       },
     },
+    {
+      files: ['vitest.config.ts'],
+      rules: {
+        'import/no-default-export': 'off',
+        'import/no-unused-modules': 'off',
+      },
+    },
   ],
   settings: {
-    'import/extensions': ['.js', '.ts'],
+    'import/extensions': ['.js', '.ts', '.vue'],
     'import/internal-regex': '^@/',
     'import/resolver': {
       typescript: true,
