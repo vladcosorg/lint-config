@@ -18,29 +18,6 @@ module.exports = defineConfig({
       rules: {
         'node/no-missing-import': 'off',
         camelcase: 'off',
-        '@typescript-eslint/naming-convention': [
-          'warn',
-          {
-            selector: 'default',
-            format: ['camelCase'],
-            leadingUnderscore: 'allow',
-            trailingUnderscore: 'allow',
-          },
-          {
-            selector: 'variable',
-            format: ['camelCase', 'UPPER_CASE'],
-            leadingUnderscore: 'allow',
-            trailingUnderscore: 'allow',
-          },
-          {
-            selector: 'typeLike',
-            format: ['PascalCase'],
-          },
-          {
-            selector: 'enumMember',
-            format: ['UPPER_CASE'],
-          },
-        ],
         '@typescript-eslint/member-ordering': 'warn',
         '@typescript-eslint/consistent-type-imports': 'warn',
         '@typescript-eslint/method-signature-style': 'warn',
