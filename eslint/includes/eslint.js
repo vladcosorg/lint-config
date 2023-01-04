@@ -21,7 +21,7 @@ module.exports = defineConfig({
     'class-methods-use-this': 'warn',
     eqeqeq: 'warn',
     'grouped-accessor-pairs': 'warn',
-    'func-style': ['warn', 'declaration'],
+    'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
     'consistent-return': 'warn',
     'default-case': 'warn',
     'default-case-last': 'warn',
@@ -58,6 +58,7 @@ module.exports = defineConfig({
     'prefer-template': 'warn',
     'quote-props': ['warn', 'as-needed'],
     'require-await': 'warn',
+    'no-void': ['error', { allowAsStatement: true }],
   },
   overrides: [
     {
