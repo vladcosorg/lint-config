@@ -21,7 +21,7 @@ module.exports = defineConfig({
           'error',
           {
             allowList: {
-              props: false,
+              props: true,
             },
           },
         ],
