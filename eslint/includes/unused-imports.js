@@ -16,6 +16,16 @@ module.exports = {
             varsIgnorePattern: '^_',
           },
         ],
+        'unused-imports/no-unused-imports-ts': 'warn',
+        'unused-imports/no-unused-vars-ts': [
+          'warn',
+          {
+            args: 'after-used',
+            argsIgnorePattern: '^_',
+            vars: 'all',
+            varsIgnorePattern: '^_',
+          },
+        ],
       },
     },
   ],
