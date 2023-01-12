@@ -16,6 +16,7 @@ module.exports = defineConfig({
     './includes/import.js',
     './includes/unused-imports.js',
     './includes/unicorn.js',
+    './includes/promise.js',
     // './includes/canonical.js',
     './includes/json.js',
     'prettier',

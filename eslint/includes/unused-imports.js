@@ -1,7 +1,7 @@
 module.exports = {
   overrides: [
     {
-      files: ['*.ts', '*.js'],
+      files: ['*.ts', '*.js', '*.vue'],
       plugins: ['unused-imports'],
       rules: {
         'no-unused-vars': 'off',
