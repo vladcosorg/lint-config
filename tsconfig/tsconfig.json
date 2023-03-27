@@ -27,8 +27,16 @@
     "useDefineForClassFields": true,
     "noEmit": false,
     "noEmitOnError": false,
+    "downlevelIteration": true,
     "paths": {
-      "@/*": ["../*"]
+      "@/*": ["./*"]
     }
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "logError": true,
+    "transpileOnly": true,
+    "files": true,
+    "experimentalResolver": true
   }
 }
