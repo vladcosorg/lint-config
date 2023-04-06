@@ -65,7 +65,7 @@ module.exports = {
       },
     },
     {
-      files: ['vitest.config.ts'],
+      files: ['vite.*.*', 'vitest.*.*', 'playwright.*.*','eslint.*.*'],
       rules: {
         'import/no-default-export': 'off',
         'import/no-unused-modules': 'off',
