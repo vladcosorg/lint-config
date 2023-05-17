@@ -65,7 +65,7 @@ module.exports = {
       },
     },
     {
-      files: ['vite.*.*', 'vitest.*.*', 'playwright.*.*','eslint.*.*'],
+      files: ['vite.*.*', 'vitest.*.*', 'playwright.*.*', 'eslint.*.*'],
       rules: {
         'import/no-default-export': 'off',
         'import/no-unused-modules': 'off',

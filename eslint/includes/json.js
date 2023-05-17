@@ -1,4 +1,7 @@
-module.exports = {
+// @ts-check
+const { defineConfig } = require('eslint-define-config')
+
+module.exports = defineConfig({
   overrides: [
     {
       files: ['*.json', '*.json5', '*.jsonc'],
@@ -7,7 +10,11 @@ module.exports = {
         'plugin:json-schema-validator/recommended',
         'plugin:jsonc/prettier',
       ],
+      rules: {
+        'json-files/sort-package-json': 'warn',
+      },
       parser: 'jsonc-eslint-parser',
+      plugins: ['json-files'],
     },
   ],
-}
+})
