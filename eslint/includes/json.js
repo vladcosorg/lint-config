@@ -12,6 +12,7 @@ module.exports = defineConfig({
       ],
       rules: {
         'json-files/sort-package-json': 'warn',
+        'json-files/require-unique-dependency-names': 'warn',
       },
       parser: 'jsonc-eslint-parser',
       plugins: ['json-files'],
