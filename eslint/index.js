@@ -19,6 +19,7 @@ module.exports = defineConfig({
     './includes/promise.js',
     // './includes/canonical.js',
     './includes/json.js',
+    './includes/node.js',
     'prettier',
   ],
   globals: {},
