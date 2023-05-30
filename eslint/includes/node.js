@@ -17,6 +17,7 @@ module.exports = defineConfig({
         'node/no-mixed-requires': 'error',
         'node/no-sync': 'error',
         'node/prefer-promises/fs': 'error',
+        'node/no-unpublished-import': 'off',
       },
     },
   ],
