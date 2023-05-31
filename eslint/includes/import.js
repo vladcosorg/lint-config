@@ -65,7 +65,14 @@ module.exports = {
       },
     },
     {
-      files: ['vite.*.*', 'vitest.*.*', 'playwright.*.*', 'eslint.*.*'],
+      files: [
+        'vite.*.*',
+        'vitest.*.*',
+        'playwright.*.*',
+        'eslint.*.*',
+        'src/index.ts',
+        'src/index.js',
+      ],
       rules: {
         'import/no-default-export': 'off',
         'import/no-unused-modules': 'off',
