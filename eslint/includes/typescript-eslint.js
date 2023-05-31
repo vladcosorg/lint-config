@@ -34,12 +34,6 @@ module.exports = defineConfig({
       },
     },
     {
-      files: ['*.ts'],
-      rules: {
-        '@typescript-eslint/explicit-module-boundary-types': 'error',
-      },
-    },
-    {
       files: ['*.test.ts'],
       rules: {
         '@typescript-eslint/require-await': 'off',
