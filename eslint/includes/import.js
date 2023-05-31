@@ -72,6 +72,7 @@ module.exports = {
         'eslint.*.*',
         'src/index.ts',
         'src/index.js',
+        '.projenrc.*',
       ],
       rules: {
         'import/no-default-export': 'off',
